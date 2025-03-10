@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCumez</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>eĆumez</h1>
+
+        <div class="sensor-section">
+            <h2>Očitane vrijednosti:</h2>
+            <p><strong>Temperatura:</strong> <span id="temperature">--</span> °C</p>
+            <p><strong>Vlažnost:</strong> <span id="humidity">--</span> %</p>
+        </div>
+
+        <div class="chart-section">
+            <h2>Promjene u temperaturi i vlažnosti</h2>
+            <canvas id="sensorChart"></canvas>
+        </div>
+
+        <div class="control-panel">
+            <h2>Kontrola vrata</h2>
+            <button id="open-door">Otvori</button>
+            <button id="close-door">Zatvori</button>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
